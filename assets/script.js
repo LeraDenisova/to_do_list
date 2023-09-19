@@ -110,19 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
                
         Title(unfulfilledArray, unfulfilledTitle);
         Title(doinArray, doinTitle);
-        
-//        if (unfulfilledArray.length == 0) {
-//            unfulfilledTitle.style.display = 'none';
-//        } else {
-//            unfulfilledTitle.style.display = 'block';
-//        }
-//
-//        if (doinArray.length == 0) {
-//            doinTitle.style.display = 'none';
-//        } else {
-//            doinTitle.style.display = 'block';
-//        }
-
 
         for (let i = 0; i < taskDeleteArray.length; i++) {
             taskDeleteArray[i].addEventListener('click', (e) => {
