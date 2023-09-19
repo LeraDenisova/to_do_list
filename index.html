@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" media="screen and (max-width:720px)" href="assets/style480.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Noto+Rashi+Hebrew:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Список дел</h1>
+
+    <div class="ThingToDo">
+        <p>Что нужно сделать</p>
+        <span class="cursor" id="ThingToDo">+</span>
+    </div>
+
+    <form class="ThingToDo_form" action="#" id="ThingToDoForm" style="display: none">
+        <div class="formHeader">
+            <div class="inputForm">
+                <label for="title">Название задачи</label>
+                <input type="text" id="title">
+            </div>
+            <div class="inputForm">
+                <label for="data">Дата</label>
+                <select name="data" id="date">
+                    <option value="Сегодня">Сегодня</option>
+                    <option value="Завтра">Завтра</option>
+                </select>
+            </div>
+        </div>
+        <div class="inputForm">
+            <label for="description">Описание задачи</label>
+            <input type="text" id="description">
+        </div>
+       <button class="cursor" id="submit">Добавить</button>
+    </form>
+    
+        
+
+    <div id="tasksToday">
+       
+<!--
+        <div class="task task_active">
+            <div class="tasks_text">
+                <p class="tasks_title">Приготовить ужин</p>
+                <p class="tasks_description">Приготовить заливную рыбу в томатном соусе</p>
+            </div>
+            <p class="tasks_date">Сегодня</p>
+            <p class="tasks_delete cursor">+</p>
+            <div class="done" style="display: none"><p class="cursor">Отетить выполненным</p></div>
+        </div>
+-->
+        
+        
+    </div>
+    
+    
+      <div id="tasksTomorrow">
+<!--
+        <div class="task">
+            <div class="tasks_text">
+                <p class="tasks_title">Приготовить ужин</p>
+                <p class="tasks_description">Приготовить заливную рыбу в томатном соусе</p>
+            </div>
+            <p class="tasks_date">Завтра</p>
+        </div>
+-->
+    </div>
+    
+    <h2 id="doinTitle">Выполненные задачи</h2>
+    <div id="doin">
+        
+    </div>
+    
+     <h2 id="unfulfilledTitle">Невыполненные задачи</h2>
+    <div id="unfulfilled">
+<!--
+         <div class="task">
+            <div class="tasks_text">
+                <p class="tasks_title">Приготовить ужин</p>
+                <p class="tasks_description">Приготовить заливную рыбу в томатном соусе</p>
+            </div>
+            <p class="tasks_date">Завтра</p>
+        </div>
+-->
+    </div>
+    <div class="delete_button">
+    <button id="firstTask" class="cursor">Удалить первую добавленную задачу</button>
+    <button id="lastTask" class="cursor">Удалить последнюю добавленную задачу</button>
+    </div>
+    
+    <div class="clear_button"><button id="clear" class="cursor">Очистить список задач</button></div>
+    
+    <div class="select_button">
+    <button id="selectEven" class="cursor">Выделить чётные задачи</button>
+    <button id="endEven" class="cursor" style="display: none">Убрать выделения</button>
+    <button id="selectOdd" class="cursor">Выделить нечётные задачи</button>
+    <button id="endOdd" class="cursor" style="display: none">Убрать выделения</button>
+    </div>
+    
+    <div class="clear_button"><button id="newDay" class="cursor">Обновить сутки</button></div>
+    
+    <script src="assets/script.js"></script>
+</body></html>

@@ -1,0 +1,81 @@
+body {
+    padding-bottom: 100px;
+}
+
+.ThingToDo {
+    width: 320px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.ThingToDo p {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+#ThingToDo {
+    font-size: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+form.ThingToDo_form {
+    width: 300px;
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    
+}
+
+input,
+select,
+button,
+.done p {
+    font-size: 14px;
+}
+
+
+.formHeader {
+    display: block;
+}
+
+select {
+    width: 300px;
+}
+
+
+#title {
+    width: 280px;
+}
+
+.task {
+    width: 300px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+p.tasks_title {
+    font-size: 20px;
+    width: 200px;
+}
+p.tasks_description {
+    width: 200px;
+}
+
+.delete_button, .select_button, .delete_button button, .select_button button, .clear_button{
+ width: 300px;
+ display: block;
+margin-top: 30px;
+
+}
+
+h2 {
+ width: 320px;
+    font-size: 25px;
+}
